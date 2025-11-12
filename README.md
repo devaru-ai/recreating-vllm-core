@@ -24,11 +24,10 @@ This project implements a LLM inference engine focused on high-throughput batch 
 </p>
 
 ## Throughput & Speedup
-- **Average throughput improvement (speedup): 2x – 10x** across most realistic settings (batch sizes 4–8, max_tokens 16–32).
+- **Average throughput improvement (speedup): 2x – 7x** across most realistic settings (batch sizes 4–8, output lengths 16-32 tokens).
 
 - **Maximum observed speedup:** 43x for small prompt/large batch/long output scenarios.
 
-- **Typical speedup: 2x – 7x** for batch sizes 4–8 and outputs of 16–32 tokens.
 
 - **Throughput is maximized** for large max_tokens and batch sizes.
 
