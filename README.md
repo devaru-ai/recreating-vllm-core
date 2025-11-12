@@ -13,7 +13,7 @@ This project implements a LLM inference engine focused on high-throughput batch 
   
 - **KV Cache Manager:** Allocates and reuses transformer key-value memory blocks for fast attention computation.
   
-- **Synchronous Batched Decoding:** Runs all requests in lockstep, maximizing GPU utilization and throughput.
+- **Continuous Batching:** Schedules new requests into the active batch immediately after others finish, maximizing GPU utilization by maintaining a high, non-stop flow of work.
 
 # Results
 
