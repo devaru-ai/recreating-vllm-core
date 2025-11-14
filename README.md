@@ -24,7 +24,7 @@ This project implements a LLM inference engine focused on high-throughput batch 
 </p>
 
 ## Throughput & Speedup
-- **Average throughput improvement (speedup): 2x – 7x** across most realistic settings (batch sizes 4–8, output lengths 16-32 tokens).
+- **Average throughput improvement (speedup): 2x – 5x** across most realistic settings (batch sizes 4–8, output lengths 16-32 tokens).
 
 - **Maximum observed speedup:** 43x for small prompt/large batch/long output scenarios.
 
@@ -50,12 +50,17 @@ This project implements a LLM inference engine focused on high-throughput batch 
 
 # Usage
 
-## 1. Install dependencies:
+## 1. Clone the repo:
+```
+git clone https://github.com/devaru-ai/recreating-vllm-core
+```
+
+## 2. Install dependencies:
 ```
 pip install torch matplotlib numpy
 ```
 
-## 2. Run the benchmark:
+## 3. Run the benchmark:
 ```
 python main.py
 ```
